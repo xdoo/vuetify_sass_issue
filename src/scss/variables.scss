@@ -1,0 +1,17 @@
+// 1. created this porject with VUE CLI
+
+// 2. "Once installed, create a folder called sass, scss or styles in your src directory with a file named variables.scss or variables.sass."
+// -> done
+
+// "When you run yarn serve, the vuetify-cli-plugin will automatically hoist the global Vuetify variables to all of your sass/scss files."
+// Yes, I can see this process on the console.
+
+$tabs-item-focus-opacity: 0.0 !default;  // works not
+$tabs-item-hover-opacity: 1 !default;    // works not
+$tabs-item-letter-spacing: 3em !default; // works
+
+// "When making changes to individual component variables, you will still need to manually include its variables file."
+// I asume, that one of the files below must be the correct one. I tried both and there is no difference.
+
+//@import '~vuetify/src/components/VTabs/VTabs.sass';
+@import '~vuetify/src/components/VTabs/_variables.scss';
